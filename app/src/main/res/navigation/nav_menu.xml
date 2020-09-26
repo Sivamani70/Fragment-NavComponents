@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_menu"
+    app:startDestination="@id/blue2">
+
+    <fragment
+        android:id="@+id/blue2"
+        android:name="com.example.navcomponents.Blue"
+        android:label="Blue" >
+        <action
+            android:id="@+id/action_blue2_to_green2"
+            app:destination="@id/green2" />
+    </fragment>
+    <fragment
+        android:id="@+id/green2"
+        android:name="com.example.navcomponents.Green"
+        android:label="Green" >
+        <action
+            android:id="@+id/action_green2_to_pink2"
+            app:destination="@id/pink2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pink2"
+        android:name="com.example.navcomponents.Pink"
+        android:label="Pink" >
+        <action
+            android:id="@+id/action_pink2_to_blue2"
+            app:destination="@id/blue2" />
+    </fragment>
+</navigation>
